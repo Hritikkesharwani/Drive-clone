@@ -1,0 +1,413 @@
+#header{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#header button {
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#header button:hover {
+    transform: scale(1.05);
+    background-color: lightyellow;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+  .title{
+      text-align: center;
+      margin-left: 10px;
+      color: white;
+  }
+
+
+#btnAddFolder {
+    
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    margin-left: 60px;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    border-color: black;
+}
+#addTextFile{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    border-color: black;
+}
+#addAlbum{
+    background-color: rgb(0, 0, 0);
+    width: 200px;
+    
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+    border-color: black;
+}
+
+#btnAddFolder:hover {
+    transform: scale(1.2);
+}
+#addtextFile:hover {
+    transform: scale(1.2);
+}
+#addAlbum:hover {
+    transform: scale(1.2);
+}
+
+#divContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* height: 200px; */
+}
+
+.folder {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.folder [action]{
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+div[purpose=name]{
+    color: rgb(0, 0, 0);
+}
+.folderimg{
+    height:5rem;
+    width:5rem;
+}
+.test{
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.options{
+    background-color: rgb(236, 236, 236);
+    border: 1px solid; 
+    position: relative;
+    top:-50px;
+    left:60px;
+    height:180px;
+    width:100px;
+    border-radius: 7px;
+}
+#divBreadCrumb {
+   margin-left: 30px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.path {
+    cursor: pointer;
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+
+    padding: 10px;
+    
+}
+
+.path:hover{
+    background-color: white;
+    color: blue;
+    text-decoration: underline;
+}
+.arrow{
+    height :20px;
+    width: 20px;
+    margin-top: 8px;
+}
+
+.text-file {
+   
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+.text-file [action]{
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.album {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.album div[purpose=name]{
+    color: rgb(0, 0, 0);
+}
+
+.album [action]{
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+.album [action]:hover {
+    color: blue;
+    transform: scale(2);
+}
+
+
+#app{
+    
+    border: 2px solid;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#app-title-bar {
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    height: 40px;
+    /* border-top: 1px solid; */
+    border-radius: 10px 10px 0 0;
+    color: white;
+}
+
+#app-title {
+    width: 94%;
+    text-align: center;
+    /* border-right: 5px solid red; */
+}
+
+#app-menu-bar {
+    display: flex;
+    background-color: rgb(233, 233, 233);
+    height: 40px;
+}
+
+#app-body {
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    height: 500px;
+    
+    border-radius: 0 0 10px 10px;
+}
+
+.notepad-menu{
+    width: 100%;
+    padding: 5px;
+}
+
+.notepad-menu * {
+    margin: 0px 5px;
+    padding: 2px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.notepad-menu span {
+    vertical-align: bottom;
+    
+}
+
+.notepad-menu span:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: teal;
+}
+
+
+.notepad-menu [pressed=true] {
+    border: 2px solid black;
+    background-color: white;
+    color: teal;
+}
+
+.notepad-menu input[type=color] {
+    width: 30px;
+}
+
+.notepad-menu select {
+    height: 30px;
+}
+
+.notepad-body {
+    height: 100%;
+    width: 100%;
+}
+
+.notepad-body textarea{
+    height: 100%;
+    width: 100%;
+}
+
+[purpose=download]{
+    display: none;
+}
+
+/* input[action=upload]{
+    display: none;
+} */
+
+#win-actions span {
+    cursor: pointer;
+
+}
+
+#win-actions span:hover {
+    color: blue;
+}
+.minus{
+    font-size:10px;
+    align-items: center;
+}
+
+.album-menu{
+    width: 100%;
+    padding: 5px;
+}
+
+.album-menu * {
+    margin: 0px 5px;
+    padding: 2px;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.album-menu span {
+    vertical-align: bottom;
+    
+}
+
+.album-menu span:hover {
+    border: 2px solid black;
+    background-color: white;
+    color: teal;
+}
+
+.album-body {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.picture-list {
+    border: 1px solid black;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.picture-list img {
+    height: 90%;
+    border: 2px solid teal;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.picture-list img:hover {
+    transform: scale(1.1);
+    border: 2px solid hsl(66, 87%, 9%);
+}
+
+.picture-list img[pressed=true]{
+    transform: scale(1.02);
+    border: 2px solid white;
+    box-shadow: 2px 2px 5px red;
+}
+
+.picture-view {
+    border: 1px solid black;
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.picture-view > div {
+    height: 100%;
+}
+
+.picture-view .move-left {
+    width: 15%;
+}
+
+.picture-view .picture-main {
+    padding: 5px;
+    width: 70%;
+    display: flex;
+}
+
+.picture-view .picture-main img {
+    height: 100%;
+}
+
+.picture-view .move-right {
+    width: 15%;
+}
